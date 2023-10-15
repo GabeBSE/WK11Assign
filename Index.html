@@ -1,0 +1,53 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+   <!-- Set the title of the web page to 'Tic-Tac-Toe' -->
+<title>Tic-Tac-Toe</title>
+</head>
+<body>
+    <main class="background"> <!-- Define the main content area with a custom background -->
+         <div class="alert alert-success hide" role="alert">
+            Player <span class="playerO">O</span> Won <!-- Create a Bootstrap alert for game results -->
+        </div>
+        <section class="title"> <!-- Section for the game title -->
+            <h1>Tic Tac Toe</h1> <!-- Display the game title 'Tic Tac Toe' -->
+        </section>
+        <section class="display"> <!-- Section for displaying game information -->
+            Player <span class="display-player playerX">X</span>'s turn <!-- Show the current player's turn -->
+        </section>
+
+        <section class="container"><!-- Section for the game grid -->
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+            <div class="tile"></div>
+        </section>
+        <section class="announcer hide"></section> <!-- Section for game announcements initially hidden -->
+        <section class="controls"> <!-- Section for game controls -->
+            <button id="reset">Reset</button> <!-- Button to reset the game -->
+        </section>
+    </main>
+    <!-- Include Bootstrap JavaScript -->
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Include your custom JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+

@@ -1,0 +1,100 @@
+/* Reset default padding and margin for all elements */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling for the background of the page */
+.background {
+    background-color: #0887c7; /* Set the background color */
+    height: 100vh; /* Adjust the height to cover the entire viewport */
+    padding-top: 1px; /* Add minimal top padding */
+    background-image: url('https://www.graphicpanic.com/images/blackboard-chalkboard-background.jpg'); /* Set the background image */
+    background-size: cover; /* Cover the entire viewport with the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-attachment: fixed; /* Keep the background fixed while scrolling */
+}
+
+/* Styling for the game title */
+.title {
+    color: rgb(221, 236, 8); /* Set text color */
+    text-align: center; /* Center-align text */
+    font-size: 40px; /* Set font size */
+    margin-top: 10%; /* Add top margin */
+}
+
+/* Styling for displaying the current player's turn */
+.display {
+    color: white; /* Set text color */
+    font-size: 25px; /* Set font size */
+    text-align: center; /* Center-align text */
+    margin-top: 1em; /* Add top margin */
+    margin-bottom: 1em; /* Add bottom margin */
+}
+
+/* Hide elements with the 'hide' class */
+.hide {
+    display: none;
+}
+
+/* Styling for the game container */
+.container {
+    margin: 0 auto; /* Center the container horizontally */
+    display: grid; /* Use grid layout */
+    grid-template-columns: 33% 33% 33%; /* Define grid columns */
+    grid-template-rows: 33% 33% 33%; /* Define grid rows */
+    max-width: 300px; /* Set a maximum width */
+}
+
+/* Styling for individual game tiles */
+.tile {
+    border: 2px solid white; /* Add a white border */
+    min-width: 100px; /* Set minimum width */
+    min-height: 100px; /* Set minimum height */
+    display: grid; /* Use grid layout for centering content */
+    justify-content: center; /* Center horizontally within the tile */
+    align-items: center; /* Center vertically within the tile */
+    font-size: 50px; /* Set font size */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+/* Styling for 'X' player's symbol */
+.playerX {
+    color: #09C372; /* Set color for 'X' */
+}
+
+/* Styling for 'O' player's symbol */
+.playerO {
+    color: #498AFB; /* Set color for 'O' */
+}
+
+/* Styling for game controls */
+.controls {
+    display: flex; /* Use a flexbox for layout */
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    margin-top: 1em; /* Add top margin */
+}
+
+/* Styling for buttons within controls */
+.controls button {
+    color: rgb(250, 245, 245); /* Set button text color */
+    padding: 8px; /* Add padding */
+    border-radius: 8px; /* Add border radius for rounded corners */
+    border: none; /* Remove button border */
+    font-size: 20px; /* Set button font size */
+    margin-left: 1em; /* Add left margin between buttons */
+    cursor: pointer; /* Change cursor to a pointer on hover */
+}
+
+/* Styling for the reset button */
+#reset {
+    background-color: #FF3860; /* Set background color for the reset button */
+}
+
+/* Customize the alert background color for warnings */
+.alert.alert-warning {
+    background-color: lightblue; /* Set background color */
+    color: black; /* Set text color */
+}
